@@ -1,10 +1,9 @@
 def turn_count(board)
   step = 0
   board.each do | el |
-    if el === "X" || el === "O"
-      step += 1
-    end
+    (el === "X" || el === "O") && step += 1
   end
+
   step
 end
 
